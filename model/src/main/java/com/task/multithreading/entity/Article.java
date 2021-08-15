@@ -1,14 +1,13 @@
 package com.task.multithreading.entity;
 
-import lombok.Data;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.ZonedDateTime;
 
-@Data
+
 @Entity
 @Table(name = "articles")
 public class Article extends AbstractEntity {
@@ -25,40 +24,40 @@ public class Article extends AbstractEntity {
     @Column(columnDefinition = "TEXT")
     private String article;
 
-//    public Article() {
-//    }
-//
-//    public String getTitle() {
-//        return title;
-//    }
-//
-//    public void setTitle(String title) {
-//        this.title = title;
-//    }
-//
-//    public String getNewsSite() {
-//        return newsSite;
-//    }
-//
-//    public void setNewsSite(String newsSite) {
-//        this.newsSite = newsSite;
-//    }
-//
-//    public ZonedDateTime getPublishedDate() {
-//        return publishedDate;
-//    }
-//
-//    public void setPublishedDate(ZonedDateTime publishedDate) {
-//        this.publishedDate = publishedDate;
-//    }
-//
-//    public String getArticle() {
-//        return article;
-//    }
-//
-//    public void setArticle(String article) {
-//        this.article = article;
-//    }
+    public Article() {
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getNewsSite() {
+        return newsSite;
+    }
+
+    public void setNewsSite(String newsSite) {
+        this.newsSite = newsSite;
+    }
+
+    public ZonedDateTime getPublishedDate() {
+        return publishedDate;
+    }
+
+    public void setPublishedDate(ZonedDateTime publishedDate) {
+        this.publishedDate = publishedDate;
+    }
+
+    public String getArticle() {
+        return article;
+    }
+
+    public void setArticle(String article) {
+        this.article = article;
+    }
 
     @Override
     public boolean equals(Object o) {

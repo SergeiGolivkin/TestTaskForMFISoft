@@ -1,6 +1,5 @@
 package com.task.multithreading.query;
 
-import lombok.Data;
 
 import javax.persistence.NoResultException;
 import javax.persistence.Query;

@@ -1,10 +1,9 @@
 package com.task.multithreading.dto;
 
-import lombok.Data;
 
 import java.util.Arrays;
 
-@Data
+
 public class ArticleRequestDto {
 
     private String id;
@@ -29,96 +28,96 @@ public class ArticleRequestDto {
 
     public Object[] events;
 
-//    public ArticleRequestDto() {
-//    }
-//
-//    public String getId() {
-//        return id;
-//    }
-//
-//    public void setId(String id) {
-//        this.id = id;
-//    }
-//
-//    public String getTitle() {
-//        return title;
-//    }
-//
-//    public void setTitle(String title) {
-//        this.title = title;
-//    }
-//
-//    public String getNewsSite() {
-//        return newsSite;
-//    }
-//
-//    public void setNewsSite(String newsSite) {
-//        this.newsSite = newsSite;
-//    }
-//
-//    public String getPublishedAt() {
-//        return publishedAt;
-//    }
-//
-//    public void setPublishedAt(String publishedAt) {
-//        this.publishedAt = publishedAt;
-//    }
-//
-//    public String getSummary() {
-//        return summary;
-//    }
-//
-//    public void setSummary(String summary) {
-//        this.summary = summary;
-//    }
-//
-//    public String getUrl() {
-//        return url;
-//    }
-//
-//    public void setUrl(String url) {
-//        this.url = url;
-//    }
-//
-//    public String getImageUrl() {
-//        return imageUrl;
-//    }
-//
-//    public void setImageUrl(String imageUrl) {
-//        this.imageUrl = imageUrl;
-//    }
-//
-//    public String getUpdatedAt() {
-//        return updatedAt;
-//    }
-//
-//    public void setUpdatedAt(String updatedAt) {
-//        this.updatedAt = updatedAt;
-//    }
-//
-//    public boolean isFeatured() {
-//        return featured;
-//    }
-//
-//    public void setFeatured(boolean featured) {
-//        this.featured = featured;
-//    }
-//
-//    public Object[] getLaunches() {
-//        return launches;
-//    }
-//
-//    public void setLaunches(Object[] launches) {
-//        this.launches = launches;
-//    }
-//
-//    public Object[] getEvents() {
-//        return events;
-//    }
-//
-//    public void setEvents(Object[] events) {
-//        this.events = events;
-//    }
+    public ArticleRequestDto() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getNewsSite() {
+        return newsSite;
+    }
+
+    public void setNewsSite(String newsSite) {
+        this.newsSite = newsSite;
+    }
+
+    public String getPublishedAt() {
+        return publishedAt;
+    }
+
+    public void setPublishedAt(String publishedAt) {
+        this.publishedAt = publishedAt;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(String updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public boolean isFeatured() {
+        return featured;
+    }
+
+    public void setFeatured(boolean featured) {
+        this.featured = featured;
+    }
+
+    public Object[] getLaunches() {
+        return launches;
+    }
+
+    public void setLaunches(Object[] launches) {
+        this.launches = launches;
+    }
+
+    public Object[] getEvents() {
+        return events;
+    }
+
+    public void setEvents(Object[] events) {
+        this.events = events;
+    }
 
     @Override
     public boolean equals(Object o) {
