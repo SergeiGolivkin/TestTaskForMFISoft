@@ -12,7 +12,7 @@ import java.time.ZonedDateTime;
 @Table(name = "articles")
 public class Article extends AbstractEntity {
 
-    @Column
+    @Column(name = "title")
     private String title;
 
     @Column(name = "news_site")

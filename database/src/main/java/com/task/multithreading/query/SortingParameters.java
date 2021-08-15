@@ -1,7 +1,5 @@
 package com.task.multithreading.query;
 
-
-
 import java.util.List;
 
 public class SortingParameters {

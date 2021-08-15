@@ -30,5 +30,5 @@ public class ArticlesController {
         BlackList.getInstance().addWord("Word");
         return articleService.downloadArticles(5, 5);
     }
-
 }
+

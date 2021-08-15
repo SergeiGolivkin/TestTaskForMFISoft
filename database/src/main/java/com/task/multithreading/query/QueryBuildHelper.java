@@ -57,5 +57,4 @@ public class QueryBuildHelper {
     public String convertToRegex(String value) {
         return REGEX_SYMBOL + value + REGEX_SYMBOL;
     }
-
 }

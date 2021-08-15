@@ -176,6 +176,4 @@ public class ArticleDto {
                 ", events=" + Arrays.toString(events) +
                 '}';
     }
-
-
 }
