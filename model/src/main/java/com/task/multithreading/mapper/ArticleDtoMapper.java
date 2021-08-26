@@ -14,4 +14,12 @@ public class ArticleDtoMapper {
         article.setArticle(content);
         return article;
     }
+
+    public static ArticleDto mapToDto(Article article, String content){
+        ArticleDto articleDto = new ArticleDto();
+        articleDto.setId(article.getId());
+        articleDto.setTitle(article.getTitle());
+        articleDto.setNewsSite(article.getNewsSite());
+        return articleDto;
+    }
 }

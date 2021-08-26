@@ -1,5 +1,6 @@
 package com.task.multithreading.repository;
 
+import com.task.multithreading.dto.ArticleDto;
 import com.task.multithreading.entity.AbstractEntity;
 import com.task.multithreading.query.QueryBuildHelper;
 
@@ -51,7 +52,7 @@ public abstract class AbstractRepository<T extends AbstractEntity> implements Cr
     }
 
     @Override
-    public Optional<T> findById(long id) {
+    public Optional<T> findById(String id) {
         return findByField("id", id);
     }
 

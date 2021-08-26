@@ -1,8 +1,10 @@
 package com.task.multithreading.controller;
 
 import com.task.multithreading.dto.ArticleDto;
+import com.task.multithreading.entity.Article;
 import com.task.multithreading.entity.BlackList;
 import com.task.multithreading.logic.ArticleService;
+import com.task.multithreading.logic.impl.ArticleServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,10 +20,12 @@ import java.util.Map;
 public class ArticlesController {
 
     private final ArticleService articleService;
+    private final ArticleServiceImpl articleServiceImpl;
 
     @Autowired
-    public ArticlesController(ArticleService articleService) {
+    public ArticlesController(ArticleService articleService, ArticleServiceImpl articleServiceImpl) {
         this.articleService = articleService;
+        this.articleServiceImpl = articleServiceImpl;
     }
 
     @GetMapping
@@ -29,6 +33,12 @@ public class ArticlesController {
     public Map<String, List<ArticleDto>> getNews() throws Exception {
         BlackList.getInstance().addWord("Word");
         return articleService.downloadArticles(5, 5);
+    }
+
+    @GetMapping("/all")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Article> getAllNews() {
+        return articleServiceImpl.getAllArticles();
     }
 }
 

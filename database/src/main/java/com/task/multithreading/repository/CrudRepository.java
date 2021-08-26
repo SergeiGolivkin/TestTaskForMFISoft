@@ -1,5 +1,6 @@
 package com.task.multithreading.repository;
 
+import com.task.multithreading.dto.ArticleDto;
 import com.task.multithreading.entity.AbstractEntity;
 
 import java.util.List;
@@ -11,7 +12,7 @@ public interface CrudRepository<T extends AbstractEntity> {
 
     List<T> getAll(int page, int size);
 
-    Optional<T> findById(long id);
+    Optional<T> findById(String id);
 
     Optional<T> findByField(String columnName, Object value);
 
